@@ -35,10 +35,12 @@ export class AppComponent {
       const src = 'demo/img/image' + i + '.jpg';
       const caption = 'Image ' + i + ' caption here';
       const thumb = 'demo/img/image' + i + '-thumb.jpg';
+      const imageName = 'image' + i + '.jpg';
       const album = {
          src: src,
          caption: caption,
-         thumb: thumb
+         thumb: thumb,
+         imageName: imageName
       };
 
       this.albums.push(album);

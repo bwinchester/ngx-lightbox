@@ -220,7 +220,7 @@ export class LightboxComponent implements OnInit, AfterViewInit, OnDestroy, OnIn
       document.getElementById('image').style.width = width + "px";
       this._lightboxEvent.broadcastLightboxEvent({ id: LIGHTBOX_EVENT.ZOOM_IN, data: null });
     } else if ($event.target.classList.contains('lb-delete')) {
-      this._lightboxEvent.broadcastLightboxEvent({ id: LIGHTBOX_EVENT.DELETE, data: this.album[this.currentImageIndex].src });
+      this._lightboxEvent.broadcastLightboxEvent({ id: LIGHTBOX_EVENT.DELETE, data: this.album[this.currentImageIndex].imageName });
     }
   }
 

@@ -7,5 +7,4 @@ src/*.js
 *.metadata.json
 *.log
 /dist
-*.d.ts
 *.ngsummary.json
